@@ -129,14 +129,12 @@ section {
   font-style: normal;
 }
 
-
 @font-face {
   font-family: "Helvetica Neue";
   src: url("./fonts/HelveticaNeueLight.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
-
 
 @font-face {
   font-family: "Arsenica Trial";
@@ -158,8 +156,6 @@ section {
   font-weight: 400;
   font-style: normal;
 }
-
-
 
 body {
   line-height: 1;
@@ -414,3 +410,325 @@ footer {
 }
 
 /* footer */
+
+/* main */
+
+.custom-select {
+  position: relative;
+  width: 100%;
+  margin-bottom: 24px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.select-selected {
+  background-color: #fff;
+  padding: 16px;
+  border: 1px solid #000;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #565656;
+}
+
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 1px solid #000;
+  border-top: none;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div {
+  padding: 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #000;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #565656;
+}
+
+.select-items > :last-child {
+  border-bottom: none;
+}
+
+.color-switcher {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.color-swatch {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  padding: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.color-swatch:hover {
+  transform: scale(1.1);
+}
+
+.color-swatch.active {
+  border: 2px solid #000000;
+  box-shadow: 0 0 0 2px white inset;
+}
+
+.product_cont {
+  display: flex;
+  gap: 60px;
+}
+
+.product_cont > :first-child {
+  flex: 1.4;
+}
+
+.product_cont > :last-child {
+  flex: 1;
+}
+
+.product_cont h2 {
+  font-family: var(--third-family);
+  font-weight: 400;
+  font-size: 38px;
+  text-transform: uppercase;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #565656;
+  margin-bottom: 20px;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 14px;
+  color: #565656;
+  margin-bottom: 36px;
+}
+
+.art {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #565656;
+}
+
+.product_first {
+  border-bottom: 0.5px solid rgba(86, 86, 86, 0.4);
+  padding-bottom: 22px;
+  margin-bottom: 24px;
+}
+
+.size {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.size p {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #565656;
+}
+
+.size > :last-child {
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.color > :first-child {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #565656;
+  margin-bottom: 13px;
+}
+
+.cart_and_favoirte {
+  display: flex;
+  gap: 13px;
+  margin-top: 30px;
+}
+
+.cart_and_favoirte > :first-child {
+  width: 100%;
+  background: #1c1c1c;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.cart_and_favoirte > :last-child {
+  background: #f7f7f7;
+  border: none;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.accordion {
+  width: 100%;
+  margin-top: 73px;
+}
+
+.accordion-item {
+  border-bottom: 0.5px solid rgba(86, 86, 86, 0.4);
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #565656;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
+  font-weight: 400;
+  font-size: 14px;
+  color: #565656;
+}
+
+.accordion-item.active .accordion-arrow {
+  transform: rotate(180deg);
+}
+
+.accordion-content p {
+  margin-bottom: 16px;
+}
+
+.product-gallery {
+  display: flex;
+  gap: 16px;
+  max-width: 736px; /* Установите максимальную ширину */
+  margin: auto; /* Центрирование */
+}
+
+/* Стилизация контейнера с превью */
+.swiper-thumbs {
+  width: 100px; /* Ширина колонки превью */
+  height: 320px; /* Высота должна соответствовать высоте нескольких превью */
+  flex-shrink: 0; /* Запрещаем сжиматься */
+}
+
+/* Стилизация самих превью */
+.swiper-thumbs .swiper-slide {
+  height: auto;
+  opacity: 0.6; /* Неактивные превью делаем полупрозрачными */
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.swiper-thumbs .swiper-slide:hover {
+  opacity: 1;
+}
+
+/* Стиль для активного превью */
+.swiper-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+  border: 1px solid #000;
+}
+
+.swiper-thumbs .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-main {
+  width: 100%;
+  height: auto; /* Высота подстроится под контент */
+}
+
+.swiper-main .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product_section {
+  margin-bottom: 100px;
+}
+
+.swiper-more_products_cont .swiper-slide {
+  display: block;
+}
+
+.swiper-more_products_cont .swiper-slide img {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.zag {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #1c1c1c;
+  margin-bottom: 9px;
+}
+
+.pr {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #565656;
+}
+
+
+.more_products {
+	margin-bottom: 100px;
+}
+
+
+/* main */

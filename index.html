@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header>
@@ -49,7 +54,253 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="product_section">
+        <div class="wrapper">
+          <div class="product_cont">
+            <div>
+              <div class="product-gallery">
+                <!-- Слайдер с превью (thumbnails) -->
+                <div class="swiper swiper-thumbs">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="./images/test.png"
+                        alt="Превью 1"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./images/test.png"
+                        alt="Превью 2"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./images/test.png"
+                        alt="Превью 3"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Основной слайдер -->
+                <div class="swiper swiper-main">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <!-- Это большое изображение, соответствующее первому превью -->
+                      <img
+                        src="./images/test.png"
+                        alt="Основное фото 1"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <!-- Второе большое изображение -->
+                      <img
+                        src="./images/test.png"
+                        alt="Основное фото 2"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <!-- Третье большое изображение -->
+                      <img
+                        src="./images/test.png"
+                        alt="Основное фото 3"
+                      />
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div class="product_first">
+                  <h2>Кашемировый свитер</h2>
+                  <p class="price">$1,200</p>
+                  <p class="desc">
+                    Кашемировый свитер — это одежда, изготовленная из мягкой,
+                    тонкой шерсти кашемировых коз. Он известен своей
+                    исключительной мягкостью, теплотой без объемности и
+                    воздухопроницаемостью.
+                  </p>
+                  <p class="art">#2003499940</p>
+                </div>
+                <div>
+                  <div class="size">
+                    <p>Размер:</p>
+                    <p>Таблица размеров</p>
+                  </div>
+                  <div class="custom-select">
+                    <div class="select-selected">
+                      34 FR (В НАЛИЧИИ)
+                      <img src="./images/arr.svg" alt="" />
+                    </div>
+                    <div class="select-items select-hide">
+                      <div>36 FR (Нет в наличии)</div>
+                      <div>38 FR (В НАЛИЧИИ)</div>
+                      <div>40 FR (В НАЛИЧИИ)</div>
+                    </div>
+                  </div>
+                  <div class="color">
+                    <p>Цвет:</p>
+                    <div class="color-switcher">
+                      <!-- Белый цвет -->
+                      <button
+                        class="color-swatch"
+                        style="background-color: #ffffff"
+                        aria-label="Выбрать белый цвет"
+                      ></button>
+
+                      <!-- Бежевый цвет (выбранный по умолчанию) -->
+                      <button
+                        class="color-swatch active"
+                        style="background-color: #d2a67f"
+                        aria-label="Выбрать бежевый цвет"
+                      ></button>
+
+                      <!-- Пример другого цвета, например, черный -->
+                      <button
+                        class="color-swatch"
+                        style="background-color: #000000"
+                        aria-label="Выбрать черный цвет"
+                      ></button>
+                    </div>
+                  </div>
+                  <div class="cart_and_favoirte">
+                    <button>Добавить в корзину</button>
+                    <button>
+                      <img src="./images/heart.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="accordion">
+                  <!-- Первый элемент аккордеона -->
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      <span>РАЗМЕР И ПОСАДКА</span>
+                      <img
+                        class="accordion-arrow"
+                        src="./images/arr.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="accordion-content">
+                      <p>
+                        Здесь находится подробная информация о размере, посадке,
+                        таблица размеров и рекомендации по выбору.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Второй элемент аккордеона -->
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      <span>ДЕТАЛИ И УХОД</span>
+                      <img
+                        class="accordion-arrow"
+                        src="./images/arr.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="accordion-content">
+                      <p>
+                        Состав ткани, инструкции по стирке, глажке и хранению
+                        изделия.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Третий элемент аккордеона -->
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      <span>ПРИМЕЧАНИЕ РЕДАКТОРА</span>
+                      <img
+                        class="accordion-arrow"
+                        src="./images/arr.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="accordion-content">
+                      <p>
+                        Особенности модели, советы стилиста и с чем лучше
+                        сочетать данный предмет гардероба.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Четвертый элемент аккордеона -->
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      <span>НАЛОГИ</span>
+                      <img
+                        class="accordion-arrow"
+                        src="./images/arr.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="accordion-content">
+                      <p>
+                        Информация о налоговых сборах и пошлинах, которые могут
+                        применяться к вашему заказу.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Пятый элемент аккордеона -->
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      <span>ДОСТАВКА И ВОЗВРАТ</span>
+                      <img
+                        class="accordion-arrow"
+                        src="./images/arr.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="accordion-content">
+                      <p>
+                        Условия, сроки и стоимость доставки. Правила и процедура
+                        возврата товара.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="more_products">
+        <div class="wrapper">
+            <div class="swiper-more_products_cont">
+                <div class="swiper-wrapper">
+                    <a href="" class="swiper-slide">
+                        <img src="./images/test_2.png" alt="">
+                        <p class="zag">/ Свитер</p>
+                        <p class="pr">$1,200</p>
+                    </a>
+                    <a href="" class="swiper-slide">
+                        <img src="./images/test_2.png" alt="">
+                        <p class="zag">/ Свитер</p>
+                        <p class="pr">$1,200</p>
+                    </a>
+                    <a href="" class="swiper-slide">
+                        <img src="./images/test_2.png" alt="">
+                        <p class="zag">/ Свитер</p>
+                        <p class="pr">$1,200</p>
+                    </a>
+                    <a href="" class="swiper-slide">
+                        <img src="./images/test_2.png" alt="">
+                        <p class="zag">/ Свитер</p>
+                        <p class="pr">$1,200</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="wrapper">
         <div class="footer-top">
@@ -71,34 +322,35 @@
               красоты, нежное объятие.
             </p>
           </div>
-          <nav class="footer_nav"> 
+          <nav class="footer_nav">
             <ul>
-                <li>
-                    <a href="">Client</a>
-                </li>
-                <li>
-                    <a href="">about</a>
-                </li>
-                <li>
-                    <a href="">About Berme</a>
-                </li>
-                <li>
-                    <a href="">contact</a>
-                </li>
+              <li>
+                <a href="">Client</a>
+              </li>
+              <li>
+                <a href="">about</a>
+              </li>
+              <li>
+                <a href="">About Berme</a>
+              </li>
+              <li>
+                <a href="">contact</a>
+              </li>
             </ul>
           </nav>
         </div>
         <div class="footer_bottom">
-            <div>
-                <a href="" target="_blank">instagram</a>
-                <a href="" target="_blank">Telegram</a>
-            </div>
-            <div>
-                <img src="./images/footer.svg" alt="">
-                <p>2025 ©Berme</p>
-            </div>
+          <div>
+            <a href="" target="_blank">instagram</a>
+            <a href="" target="_blank">Telegram</a>
+          </div>
+          <div>
+            <img src="./images/footer.svg" alt="" />
+            <p>2025 ©Berme</p>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
