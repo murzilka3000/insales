@@ -959,6 +959,10 @@ footer {
     margin-bottom: 36px;
     margin-top: 28px;
   }
+
+  .accordion {
+    margin-top: 41px;
+  }
 }
 
 .bread {
