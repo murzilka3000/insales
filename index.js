@@ -83,40 +83,52 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Инициализация слайдера с превью (thumbnails)
+var thumbsSwiper = new Swiper(".swiper-thumbs", {
+  direction: "vertical",
+  spaceBetween: 10,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
 
-
-
-
-
-
-
-  // Инициализация слайдера с превью (thumbnails)
-  var thumbsSwiper = new Swiper(".swiper-thumbs", {
-    direction: "vertical", 
-    spaceBetween: 10,
-    slidesPerView: 3, 
-    freeMode: true,
-    watchSlidesProgress: true,
-  });
-
-  // Инициализация основного слайдера
-  var mainSwiper = new Swiper(".swiper-main", {
-    spaceBetween: 10,
-    thumbs: {
-      swiper: thumbsSwiper,
+  breakpoints: {
+    767: {
+      direction: "vertical",
+      slidesPerView: 3,
     },
-  });
+    0: {
+      direction: "horizontal",
+      slidesPerView: 3,
+    },
+  },
+});
 
+// Инициализация основного слайдера
+var mainSwiper = new Swiper(".swiper-main", {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: thumbsSwiper,
+  },
+});
 
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  const moreProductsSwiper = new Swiper('.swiper-more_products_cont', {
+document.addEventListener("DOMContentLoaded", function () {
+  const moreProductsSwiper = new Swiper(".swiper-more_products_cont", {
     slidesPerView: 4,
     spaceBetween: 14,
     loop: false,
+    breakpoints: {
+      1089: {
+        slidesPerView: 4,
+      },
+      877: {
+        slidesPerView: 3,
+      },
+      600: {
+        slidesPerView: 2,
+      },
+      0: {
+        slidesPerView: 1.2,
+      },
+    },
   });
 });
