@@ -970,4 +970,8 @@ footer {
   padding-right: 20px;
 }
 
+.more_products * {
+  text-decoration: none;
+}
+
 /* main */
